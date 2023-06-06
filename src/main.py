@@ -40,7 +40,7 @@ datasets = api.dataset.get_list(project_id)
 # project_meta = sly.Project(project_path, sly.OpenMode.READ).meta
 # datasets = None
 
-custom_data = project_info.custom_data
+# custom_data = project_info.custom_data
 
 
 # 2. get download link
@@ -49,32 +49,31 @@ dtools.update_sly_url_dict({project_id: download_sly_url})
 
 
 # 3. upload custom data
-if len(custom_data) >= 0:
-    # preset fields
-    custom_data = {
-        # required fields
-        "name": PROJECT_NAME,
-        "fullname": PROJECT_NAME_FULL,
-        "cv_tasks": ["semantic segmentation"],
-        "annotation_types": ["semantic segmentation"],
-        "industries": ["general domain"],  # ! Not sure
-        "release_year": 2021,
-        "homepage_url": "https://www.vicos.si/resources/kolektorsdd2/",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode/",
-        "preview_image_id": 20359086,
-        "github_url": None,  # ! Doesn't have github page
-        "citation_url": "https://prints.vicos.si/publications/385",
-        "download_sly_url": download_sly_url,
-        # optional fields
-        "download_original_url": "https://go.vicos.si/kolektorsdd2",
-        # "paper": None,
-        # "organization_name": None,
-        # "organization_url": None,
-        # "tags": [],
-        "github": "dataset-ninja/kolektor-surface-defect-dataset-2",
-    }
-    api.project.update_custom_data(project_id, custom_data)
+
+custom_data = {
+    # required fields
+    "name": PROJECT_NAME,
+    "fullname": PROJECT_NAME_FULL,
+    "cv_tasks": ["semantic segmentation"],
+    "annotation_types": ["semantic segmentation"],
+    "industries": ["general domain"],  # ! Not sure
+    "release_year": 2021,
+    "homepage_url": "https://www.vicos.si/resources/kolektorsdd2/",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode/",
+    "preview_image_id": 20359086,
+    "github_url": None,  # ! Doesn't have github page
+    "citation_url": "https://prints.vicos.si/publications/385",
+    "download_sly_url": download_sly_url,
+    # optional fields
+    "download_original_url": "https://go.vicos.si/kolektorsdd2",
+    # "paper": None,
+    # "organization_name": None,
+    # "organization_url": None,
+    # "tags": [],
+    "github": "dataset-ninja/kolektor-surface-defect-dataset-2",
+}
+api.project.update_custom_data(project_id, custom_data)
 
 
 project_info = api.project.get_info_by_id(project_id)
@@ -133,7 +132,7 @@ def build_stats():
 def build_visualizations():
     renderers = [
         dtools.Poster(project_id, project_meta, force=False),
-        dtools.SideAnnotationsGrid(project_id, project_meta),
+        # dtools.SideAnnotationsGrid(project_id, project_meta), # ! Return after bug fix
     ]
     animators = [
         dtools.HorizontalGrid(project_id, project_meta),

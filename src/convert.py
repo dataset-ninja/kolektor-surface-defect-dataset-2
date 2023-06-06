@@ -12,7 +12,7 @@ from tqdm import tqdm
 def convert_and_upload_supervisely_project(
     api: sly.Api, workspace_id: int, project_name: str
 ) -> sly.ProjectInfo:
-    dataset_path = "/Users/iwatkot/Downloads/KolektorSDD2"
+    dataset_path = "/Users/iwatkot/Downloads/ninja-datasets/KolektorSDD2"
     batch_size = 200
     mask_suffix = "_GT"
     # train_images_folder = "train"

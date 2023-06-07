@@ -62,7 +62,8 @@ custom_data = {
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode/",
     "preview_image_id": 222859,
-    "github_url": None,  # ! Doesn't have github page
+    "github_url": "https://github.com/dataset-ninja/kolektor-surface-defect-dataset-2",
+    "github": "dataset-ninja/kolektor-surface-defect-dataset-2",
     "citation_url": "https://prints.vicos.si/publications/385",
     "download_sly_url": download_sly_url,
     # optional fields
@@ -71,7 +72,6 @@ custom_data = {
     # "organization_name": None,
     # "organization_url": None,
     # "tags": [],
-    "github": "dataset-ninja/kolektor-surface-defect-dataset-2",
 }
 api.project.update_custom_data(project_id, custom_data)
 

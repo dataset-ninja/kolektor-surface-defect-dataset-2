@@ -1,1 +1,1 @@
-Kolektor Surface-Defect Dataset 2 data uses [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+Kolektor Surface-Defect Dataset 2 is under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) license.

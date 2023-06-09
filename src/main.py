@@ -1,3 +1,5 @@
+import argparse
+import json
 import os
 import sys
 
@@ -5,8 +7,8 @@ import supervisely as sly
 from dataset_tools import ProjectRepo
 from dotenv import load_dotenv
 
-import src.settings as s
-from src.convert import convert_and_upload_supervisely_project
+import settings as s
+from convert import convert_and_upload_supervisely_project
 
 # Create instance of supervisely API object.
 load_dotenv(os.path.expanduser("~/ninja.env"))
@@ -39,8 +41,25 @@ else:
 project_id = project_info.id
 settings = s.get_settings()
 
-# Creating stats, visualizations and texts for project.
-project_repo = ProjectRepo(api, project_id, settings)
-project_repo.build_stats()
-project_repo.build_visualizations()
-project_repo.build_texts()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Upload dataset to instance.")
+    parser.add_argument(
+        "--forces", type=json.loads, default="{}", help="Which parameters to force."
+    )
+
+    args = parser.parse_args()
+    forces = args.forces
+
+    sly.logger.info(f"Script is starting with forces: {forces}")
+
+    force_stats = forces.get("force_stats")
+    force_visuals = forces.get("force_visuals")
+    force_texts = forces.get("force_texts")
+
+    project_repo = ProjectRepo(api, project_id, settings)
+    project_repo.build_stats(force=force_stats)
+    project_repo.build_visualizations(force=force_visuals)
+    project_repo.build_texts(force=force_texts)
+
+    sly.logger.info("Script finished.")

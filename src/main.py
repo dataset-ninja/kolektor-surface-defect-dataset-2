@@ -12,7 +12,9 @@ from convert import convert_and_upload_supervisely_project
 
 # Create instance of supervisely API object.
 load_dotenv(os.path.expanduser("~/ninja.env"))
-load_dotenv("local.env")
+current_path = os.path.dirname(os.path.realpath(__file__))
+parent_path = os.path.dirname(current_path)
+load_dotenv(os.path.join(parent_path, "local.env"))
 api = sly.Api.from_env()
 team_id = sly.env.team_id()
 workspace_id = sly.env.workspace_id()

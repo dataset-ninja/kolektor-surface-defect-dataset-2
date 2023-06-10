@@ -7,8 +7,8 @@ import supervisely as sly
 from dataset_tools import ProjectRepo
 from dotenv import load_dotenv
 
-import settings as s
-from convert import convert_and_upload_supervisely_project
+import src.settings as s
+from src.convert import convert_and_upload_supervisely_project
 
 # Create instance of supervisely API object.
 load_dotenv(os.path.expanduser("~/ninja.env"))

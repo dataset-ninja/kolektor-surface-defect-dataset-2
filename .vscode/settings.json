@@ -1,7 +1,6 @@
 {
     "python.defaultInterpreterPath": ".venv/bin/python",
     "files.exclude": {
-        ".venv": true
     },
     "black-formatter.args": [
         "--line-length",

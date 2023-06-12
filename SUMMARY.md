@@ -4,6 +4,6 @@ The dataset consists of 3336 images with 394 labeled objects belonging to 1 sing
 
 Each image in the Kolektor Surface-Defect dataset has pixel-level semantic segmentation annotations. There are 2980 (89% of the total) unlabeled images (i.e. without annotations). There are 2 splits in the dataset: *train* (2332 images) and *test* (1004 images). The dataset was released in 2021.
 
-Here is the visualized example of the single *defect* class:
+Here is the visualized example grid with annotations:
 
-[Dataset classes](https://github.com/dataset-ninja/kolektor-surface-defect-dataset-2/raw/main/visualizations/classes_preview.webm)
+<img src="https://github.com/dataset-ninja/kolektor-surface-defect-dataset-2/raw/main/visualizations/side_annotations_grid.png">

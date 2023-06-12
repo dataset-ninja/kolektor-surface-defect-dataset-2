@@ -6,4 +6,4 @@ Each image in the Kolektor Surface-Defect dataset has pixel-level semantic segme
 
 Here is the visualized example grid with annotations:
 
-<img src="https://github.com/dataset-ninja/kolektor-surface-defect-dataset-2/raw/main/visualizations/side_annotations_grid.png">
+<img src="https://github.com/dataset-ninja/kolektor-surface-defect-dataset-2/raw/main/visualizations/horizontal_grid.png">

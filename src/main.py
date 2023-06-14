@@ -68,6 +68,6 @@ if __name__ == "__main__":
 
     # * Optional parameter for preview_class should be passed if needed:
     # * Literal["ClassesPreview", "HorizontalGrid", "SideAnnotationsGrid"]
-    project_repo.build_texts(force=force_texts, preview_class="HorizontalGrid")
+    project_repo.build_texts(force=force_texts)
 
     sly.logger.info("Script finished.")

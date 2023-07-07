@@ -6,4 +6,4 @@ Each image in the Kolektor Surface-Defect dataset has pixel-level semantic segme
 
 Here are the visualized examples for each of the 1 classes:
 
-[Dataset classes](https://github.com/dataset-ninja/kolektor-surface-defect-dataset-2/raw/main/visualizations/classes_preview.webm)
+[Dataset classes](https://github.com/dataset-ninja/kolektor-surface-defect-dataset-2/raw/main/visualizations/poster.png)

@@ -3,3 +3,4 @@ __pycache__
 .venv/
 .flake8
 tmp/
+APP_DATA

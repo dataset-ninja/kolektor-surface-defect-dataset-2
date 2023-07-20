@@ -1,6 +1,6 @@
-If you make use of the Kolektor Surface-Defect Dataset 2 data, please cite the following reference (to be prepared after the challenge workshop) in any publications:
+If you make use of the KolektorSDD2 data, please cite the following reference:
 
-```
+```bibtex
 @article{Bozic2021COMIND,
   author = {Bo{\v{z}}i{\v{c}}, Jakob and Tabernik, Domen and 
   Sko{\v{c}}aj, Danijel},
@@ -8,7 +8,7 @@ If you make use of the Kolektor Surface-Defect Dataset 2 data, please cite the f
   title = {{Mixed supervision for surface-defect detection:
 from weakly to fully supervised learning}},
   year = {2021}
-}
+}PASTE HERE CUSTOM CITATION FROM THE SOURCE URL
 ```
 
 [🔗 Source](https://www.vicos.si/resources/kolektorsdd2/)

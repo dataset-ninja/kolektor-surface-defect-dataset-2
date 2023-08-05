@@ -8,7 +8,7 @@ If you make use of the KolektorSDD2 data, please cite the following reference:
   title = {{Mixed supervision for surface-defect detection:
 from weakly to fully supervised learning}},
   year = {2021}
-}PASTE HERE CUSTOM CITATION FROM THE SOURCE URL
+}
 ```
 
-[🔗 Source](https://www.vicos.si/resources/kolektorsdd2/)
+[Source](https://www.vicos.si/resources/kolektorsdd2/)

@@ -21,13 +21,17 @@ PROJECT_NAME_FULL: str = "Kolektor Surface-Defect Dataset 2"
 ##################################
 LICENSE: License = License.CC_BY_SA_4_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [
+    Domain.SurfaceDefectDetection(),
     Domain.Industrial(),
-    Research.SurfaceDefectDetection(),
 ]
 CATEGORY: Category = Category.Manufacturing()
 
-CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
-ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
+CV_TASKS: List[CVTask] = [
+    CVTask.InstanceSegmentation(),
+    CVTask.SemanticSegmentation(),
+    CVTask.ObjectDetection(),
+]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
 
 RELEASE_DATE: Optional[str] = "2021-04-17"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:

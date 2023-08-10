@@ -15,6 +15,7 @@ from dataset_tools.templates import (
 ##################################
 PROJECT_NAME: str = "KolektorSDD2"
 PROJECT_NAME_FULL: str = "Kolektor Surface-Defect Dataset 2"
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
@@ -85,6 +86,7 @@ def get_settings():
 
     settings = {
         "project_name": PROJECT_NAME,
+         "hide_dataset": HIDE_DATASET,
         "license": LICENSE,
         "applications": APPLICATIONS,
         "category": CATEGORY,

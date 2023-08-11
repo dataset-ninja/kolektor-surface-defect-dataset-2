@@ -15,4 +15,4 @@ dtools.download(dataset='KolektorSDD2', dst_dir='~/dataset-ninja/')
 ```
 Make sure not to overlook the [python code example](https://developer.supervisely.com/getting-started/python-sdk-tutorials/iterate-over-a-local-project) available on the Supervisely Developer Portal. It will give you a clear idea of how to effortlessly work with the downloaded dataset.
 
-The data in original format can be [downloaded here](https://go.vicos.si/kolektorsdd2)
+The data in original format can be [downloaded here](https://go.vicos.si/kolektorsdd2).

@@ -1,3 +1,3 @@
 # Kolektor Surface-Defect Dataset 2
 
-Kolektor Surface-Defect is a dataset for semantic segmentation tasks.
+KolektorSDD2 is a dataset for instance segmentation, semantic segmentation, object detection tasks.

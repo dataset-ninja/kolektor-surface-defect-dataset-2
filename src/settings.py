@@ -41,7 +41,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://www.vicos.si/resources/kolektorsdd2/"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 220881
+PREVIEW_IMAGE_ID: int = 2465709
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/kolektor-surface-defect-dataset-2"
@@ -86,7 +86,7 @@ def get_settings():
 
     settings = {
         "project_name": PROJECT_NAME,
-         "hide_dataset": HIDE_DATASET,
+        "hide_dataset": HIDE_DATASET,
         "license": LICENSE,
         "applications": APPLICATIONS,
         "category": CATEGORY,

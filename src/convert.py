@@ -14,7 +14,7 @@ def convert_and_upload_supervisely_project(
 ) -> sly.ProjectInfo:
     pass
 
-    dataset_path = "APP_DATA/"
+    dataset_path = "APP_DATA/KolektorSDD2"
     batch_size = 200
     mask_suffix = "_GT"
     # train_images_folder = "train"

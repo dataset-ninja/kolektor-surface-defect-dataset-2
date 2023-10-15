@@ -1,6 +1,6 @@
 Dataset **KolektorSDD2** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/C/G/ZF/9TTjWYXwMwrpsucVTLE6haAzRWg6pLtiAQLpkDBv1DQka4p6uClOX6417Q9byIJuyHtcyViHAG5eKj1qBn7EewCtzExChwu7Ta7jD2eifK6m8EeLtIA79cvHNjVW.tar)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/v/c/Y2/1Ai6M2Cxgnqlr64JKR5KbcsAdnZvzfgzNZxjd9VEdqGlLs3K3e3FvLpfaxNwEPmBOVe6DnQ0klL94jbQSjXiDON2lMrmsCd4iDalYtGfAMTlwWYGWkEP0uNeUKDc.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash

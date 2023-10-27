@@ -61,6 +61,7 @@ PAPER: Optional[
 ] = "https://www.sciencedirect.com/science/article/abs/pii/S016636152100066X?via%3Dihub"
 CITATION_URL: Optional[str] = "https://www.vicos.si/resources/kolektorsdd2/"
 AUTHORS: Optional[List[str]] = ["Jakob Božič", "Domen Tabernik", "Danijel Skočaj"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["danijel.skocaj@fri.uni-lj.si"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "University of Ljubljana, Slovenia"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.uni-lj.si/university/"
@@ -108,6 +109,7 @@ def get_settings():
     settings["paper"] = PAPER
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT

@@ -14,7 +14,7 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "KolektorSDD2"
-PROJECT_NAME_FULL: str = "Kolektor Surface-Defect Dataset 2"
+PROJECT_NAME_FULL: str = "KolektorSDD2: Kolektor Surface-Defect Dataset 2"
 HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################

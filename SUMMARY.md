@@ -1,4 +1,4 @@
-**KolektorSDD2: Kolektor Surface-Defect Dataset 2** is a dataset for instance segmentation, semantic segmentation, and object detection tasks. It is used in the surface defect detection and industrial domains. 
+**KolektorSDD2: Kolektor Surface-Defect Dataset 2** is a dataset for instance segmentation, semantic segmentation, object detection, and weakly supervised learning tasks. It is used in the surface defect detection and industrial domains. 
 
 The dataset consists of 3336 images with 394 labeled objects belonging to 1 single class (*defect*).
 
